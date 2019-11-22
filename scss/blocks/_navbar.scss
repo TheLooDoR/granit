@@ -1,0 +1,20 @@
+.navbar {
+  .navbar-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffcc00;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    top: 25px;
+    .menu-item {
+      @include medium;
+      font-size: 14px;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}

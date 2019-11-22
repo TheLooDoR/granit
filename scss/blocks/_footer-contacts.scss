@@ -1,0 +1,77 @@
+.contacts {
+  background: #292929;
+  padding: 50px 0 45px 0;
+  color: white;
+  .container {
+    .contacts-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .left-side {
+        .logo-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 55px;
+          .logo {
+            margin-right: 20px;
+          }
+          .logo-descr {
+            .company-name {
+              display: block;
+              text-transform: uppercase;
+              @include bold;
+              font-size: 20px;
+            }
+            .descr {
+              display: block;
+              @include light;
+              font-size: 11px;
+            }
+          }
+        }
+        .rights-wrap {
+          @include light;
+          font-size: 12px;
+        }
+      }
+
+      .right-side {
+        .mobile-wrap {
+          text-align: right;
+          margin-bottom: 30px;
+          .mobile {
+            .phone-number {
+              @include bold;
+              font-size: 18px;
+              font-weight: bold;
+            }
+            .phone-comment {
+              @include light;
+              font-size: 11px;
+              color: white;
+            }
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+        .button-wrap {
+          display: flex;
+          justify-content: flex-end;
+          .button-o {
+            color: white;
+            box-sizing: border-box;
+            padding: 13px 25px;
+            border: 2px solid white;
+            background-color: transparent;
+            @include medium;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

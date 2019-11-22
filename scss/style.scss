@@ -1,0 +1,19 @@
+//ШРИФТЫ
+@import 'fonts';
+//СЕТКА
+@import '_grid.scss';
+//ЦВЕТА
+@import "colors";
+//UI
+@import "UI";
+//БЛОКИ-ШАПКА
+@import './blocks/_header-info';
+@import "blocks/_navbar";
+@import "blocks/_hero";
+//БЛОКИ КОНТЕНТ
+@import 'blocks/_stock';
+@import "blocks/_advantages";
+@import "blocks/_popular";
+@import "blocks/services";
+@import "blocks/footer-map";
+@import "blocks/footer-contacts";

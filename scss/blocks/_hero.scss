@@ -1,0 +1,49 @@
+.hero {
+  background: url("../../img/hero-bg.png.jpg") no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;
+  .hero-header {
+    padding-top: 160px;
+    @include bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    h1{
+      margin: 0;
+    }
+  }
+  .hero-descr{
+    padding-top: 30px;
+    @include light;
+    font-size: 13px;
+  }
+  .hero-feedback {
+    padding-top: 64px;
+    padding-bottom: 142px;
+    color: white;
+    font-size: 12px;
+    @include medium;
+    a {
+      color: white;
+      text-decoration: underline;
+      @include medium;
+    }
+    span {
+      margin: 0px 15px 0 30px;
+      @include light;
+    }
+    button {
+      padding: 20px 30px;
+      color: black;
+      background-color: $main;
+      border: none;
+      @include medium;
+      &:hover {
+        cursor: pointer;
+        background-color: $btn-hover;
+      }
+    }
+  }
+  .hero-header, .hero-descr {
+    color: white
+  }
+}

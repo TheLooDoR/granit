@@ -1,0 +1,22 @@
+.section-header {
+  text-align: center;
+  padding: 0px 0 55px 0;
+  text-transform: uppercase;
+  @include bold;
+  font-weight: bold;
+  font-size: 20px;
+  color: #292929;
+}
+
+.btn-main {
+  border: none;
+  padding: 25px 55px;
+  background: $main;
+  @include medium;
+  font-size: 12px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    background: $btn-hover;
+  }
+}

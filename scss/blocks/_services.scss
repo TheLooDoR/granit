@@ -1,0 +1,28 @@
+.services {
+  background: #f4f4f4;
+  padding: 80px 0;
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .item-card {
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 70px 40px 70px;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          padding-top: 10px;
+          @include medium;
+          font-size: 15px;
+          color: #292929;
+          border-bottom: 1px solid #c1c1c1;
+        }
+        &:hover {
+          background: #fff;
+        }
+      }
+    }
+}

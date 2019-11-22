@@ -1,0 +1,72 @@
+.popular {
+  padding: 80px 0;
+  .items {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .item-card {
+      border: 2px solid #f6f6f6;
+      margin: 10px 5px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 220px;
+      position: relative;
+      .item-img {
+        width: 180px;
+        height: 155px;
+        padding-bottom: 22px;
+      }
+      .item-name {
+        margin-bottom: 25px;
+        @include medium;
+        font-size: 12px;
+        text-align: center;
+        color: #292929;
+        border-bottom: 1px solid #c9c9c9;
+      }
+      .item-price {
+        padding-bottom: 30px;
+      }
+      .btn-main {
+        padding: 20px 70px;
+      }
+      .old-price {
+        @include medium;
+        color: #979797;
+        font-size: 10px;
+        text-decoration: line-through;
+      }
+      .discount-price {
+        @include medium;
+        font-size: 16px;
+        color: #ff0000;
+        font-weight: bold;
+      }
+      .current-price {
+        @include medium;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+    }
+    .sale {
+      &::before {
+        position: absolute;
+        content: 'Акция';
+        top: 30px;
+        left: 35px;
+        color: white;
+        background: red;
+        padding: 8px 10px;
+        @include medium;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
