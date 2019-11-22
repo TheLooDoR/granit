@@ -8,15 +8,18 @@
       justify-content: space-around;
       .item-card {
         border: 2px solid white;
+        margin: 10px 5px;
         display: flex;
         flex-direction: column;
         padding: 50px 70px 40px 70px;
         align-items: center;
         justify-content: space-between;
+        box-sizing: border-box;
+        max-width: 300px;
         p {
           padding-top: 10px;
           @include medium;
-          font-size: 15px;
+          font-size: 14px;
           color: #292929;
           border-bottom: 1px solid #c1c1c1;
         }
@@ -25,4 +28,11 @@
         }
       }
     }
+  @media (max-width: 1040px) {
+    .items {
+      .item-card {
+        max-width: 280px;
+      }
+    }
+  }
 }

@@ -63,5 +63,18 @@
       }
     }
   }
-
+  @media (max-width: 430px) {
+    .container {
+      .our-contacts {
+        padding: 50px 70px 60px 50px;
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    .container {
+      .our-contacts {
+        padding: 30px 30px 40px 30px;
+      }
+    }
+  }
 }

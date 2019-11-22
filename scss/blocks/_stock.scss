@@ -40,5 +40,11 @@
         }
       }
     }
-
+  @media (max-width: 1040px) {
+    .items {
+      .item-card {
+        max-width: 280px;
+      }
+    }
+  }
 }

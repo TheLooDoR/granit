@@ -21,6 +21,9 @@
     padding-bottom: 142px;
     color: white;
     font-size: 12px;
+    .link-to-catalog {
+      display: inline-block;
+    }
     @include medium;
     a {
       color: white;
@@ -45,5 +48,13 @@
   }
   .hero-header, .hero-descr {
     color: white
+  }
+  @media (max-width: 450px) {
+    .hero-feedback {
+      .link-to-catalog {
+        display: block;
+        padding-top: 10px;
+      }
+    }
   }
 }

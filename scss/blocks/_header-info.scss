@@ -59,4 +59,32 @@
             }
         }
     }
+    @media (max-width: 675px) {
+        .info-wrap {
+            .right-side {
+                flex-direction: column;
+                .button-o {
+                    margin-left: 0;
+                    margin-top: 10px;
+                    padding: 17px 30px;
+                }
+            }
+        }
+    }
+    @media (max-width: 465px) {
+        .info-wrap {
+            flex-wrap: nowrap;
+            .right-side {
+                .mobile {
+                    .phone-number {
+                        font-size: 15px;
+                    }
+                }
+                .button-o {
+                    font-size: 10px;
+                    padding: 17px 36px;
+                }
+            }
+        }
+    }
 }

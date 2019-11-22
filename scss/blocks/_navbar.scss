@@ -16,5 +16,20 @@
         text-decoration: none;
       }
     }
+    @media (max-width: 480px) {
+      .menu-item {
+        font-size: 11px;
+      }
+    }
+    @media (max-width: 380px) {
+      .menu-item {
+        font-size: 10px;
+      }
+    }
+    @media (max-width: 349px) {
+      .menu-item {
+        font-size: 14px;
+      }
+    }
   }
 }

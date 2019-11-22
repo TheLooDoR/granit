@@ -113,6 +113,27 @@
       font-family: 'Gotham Pro Medium', sans-serif;
       font-size: 12px; }
 
+@media (max-width: 675px) {
+  .info .info-wrap .right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .info .info-wrap .right-side .button-o {
+      margin-left: 0;
+      margin-top: 10px;
+      padding: 17px 30px; } }
+
+@media (max-width: 465px) {
+  .info .info-wrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .info .info-wrap .right-side .mobile .phone-number {
+      font-size: 15px; }
+    .info .info-wrap .right-side .button-o {
+      font-size: 10px;
+      padding: 17px 36px; } }
+
 .navbar .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +155,15 @@
     .navbar .navbar-wrap .menu-item a {
       color: black;
       text-decoration: none; }
+  @media (max-width: 480px) {
+    .navbar .navbar-wrap .menu-item {
+      font-size: 11px; } }
+  @media (max-width: 380px) {
+    .navbar .navbar-wrap .menu-item {
+      font-size: 10px; } }
+  @media (max-width: 349px) {
+    .navbar .navbar-wrap .menu-item {
+      font-size: 14px; } }
 
 .hero {
   background: url("../../img/hero-bg.png.jpg") no-repeat center center;
@@ -158,6 +188,8 @@
     color: white;
     font-size: 12px;
     font-family: 'Gotham Pro Medium', sans-serif; }
+    .hero .hero-feedback .link-to-catalog {
+      display: inline-block; }
     .hero .hero-feedback a {
       color: white;
       text-decoration: underline;
@@ -176,6 +208,10 @@
         background-color: #dfbb16; }
   .hero .hero-header, .hero .hero-descr {
     color: white; }
+  @media (max-width: 450px) {
+    .hero .hero-feedback .link-to-catalog {
+      display: block;
+      padding-top: 10px; } }
 
 .stock {
   padding: 80px 0px; }
@@ -230,6 +266,9 @@
         font-family: 'Gotham Pro Medium', sans-serif;
         font-size: 16px;
         font-weight: bold; }
+  @media (max-width: 1040px) {
+    .stock .items .item-card {
+      max-width: 280px; } }
 
 .advantages {
   background: #f4f4f4;
@@ -275,6 +314,9 @@
         font-size: 12px; }
       .advantages .items .item-card:hover {
         background: #fff; }
+  @media (max-width: 1040px) {
+    .advantages .items .item-card {
+      max-width: 280px; } }
 
 .popular {
   padding: 80px 0; }
@@ -369,6 +411,7 @@
     justify-content: space-around; }
     .services .items .item-card {
       border: 2px solid white;
+      margin: 10px 5px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -382,15 +425,21 @@
       align-items: center;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-width: 300px; }
       .services .items .item-card p {
         padding-top: 10px;
         font-family: 'Gotham Pro Medium', sans-serif;
-        font-size: 15px;
+        font-size: 14px;
         color: #292929;
         border-bottom: 1px solid #c1c1c1; }
       .services .items .item-card:hover {
         background: #fff; }
+  @media (max-width: 1040px) {
+    .services .items .item-card {
+      max-width: 280px; } }
 
 .map {
   background: url("../../img/footer-bg.jpg") no-repeat center center;
@@ -465,6 +514,12 @@
         font-weight: bold; }
         .map .container .our-contacts .mail .mail-img {
           padding-right: 18px; }
+  @media (max-width: 430px) {
+    .map .container .our-contacts {
+      padding: 50px 70px 60px 50px; } }
+  @media (max-width: 360px) {
+    .map .container .our-contacts {
+      padding: 30px 30px 40px 30px; } }
 
 .contacts {
   background: #292929;
